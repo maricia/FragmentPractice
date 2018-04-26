@@ -1,3 +1,4 @@
+/*
 package com.maricia.fragmentpractice;
 
 import android.os.AsyncTask;
@@ -10,11 +11,11 @@ import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 
-public class ReadFromNASCAR extends AsyncTask<String, String, String> {
+public class ReadFromNASCAR extends AsyncTask<Object, String, String> {
     private static final String TAG = "ReadFromNASCAR";
     public Document doc = null;
     public TextView titleTextView;
-    Tab1Fragment tab1Fragment;
+
 
 
     @Override
@@ -27,7 +28,7 @@ public class ReadFromNASCAR extends AsyncTask<String, String, String> {
 
 
     @Override
-    protected String doInBackground(String... strings) {
+    protected String doInBackground(Object... String) {
 
 
         try {
@@ -37,20 +38,23 @@ public class ReadFromNASCAR extends AsyncTask<String, String, String> {
         }
         Log.d(TAG, "doInBackground: "+ doc.title());
 
-        return doc.title();
+
+
+        return java.lang.String.valueOf(doc.title());
     }
+
+
 
 
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        Log.d(TAG, "onPostExecute: " + s);
+        Log.d(TAG, "onPostExecute: 1 " + s);
+        Tab1Fragment tab1Fragment = new Tab1Fragment();
+        //tab1Fragment.titleTextView.setText(s);
         tab1Fragment.displayTitle(s);
-
-
     }
 
 
 
-
-}
+*/

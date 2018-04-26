@@ -15,7 +15,7 @@ public class ReadFromNASCAR extends AsyncTask<String, String, String> {
     public Document doc = null;
     public TextView titleTextView;
     Tab1Fragment tab1Fragment;
-    //Fragment Tab1Fragment;
+
 
     @Override
     protected void onPreExecute() {
@@ -45,7 +45,7 @@ public class ReadFromNASCAR extends AsyncTask<String, String, String> {
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         Log.d(TAG, "onPostExecute: " + s);
-       // tab1Fragment.displayTitle(s);
+        tab1Fragment.displayTitle(s);
 
 
     }

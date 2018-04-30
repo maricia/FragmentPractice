@@ -1,6 +1,5 @@
 package com.maricia.fragmentpractice;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -8,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
-public class Tab2Fragment extends android.support.v4.app.Fragment{
+public class WebsiteFragment extends android.support.v4.app.Fragment{
     private static final String TAG = "Tab2Fragment";
     WebView myWebView;
 

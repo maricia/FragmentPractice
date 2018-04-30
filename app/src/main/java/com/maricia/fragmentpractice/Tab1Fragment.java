@@ -53,9 +53,9 @@ public class Tab1Fragment extends android.support.v4.app.Fragment {
         titleTextView.setText(title);
     }
 
-
+//innerclass for background process
     private class ReadFromNASCAR extends AsyncTask<String, Void, String> {
-        private static final String TAG = "ReadFromNASCAR";
+        private static final String TAG = "Experience";
 
         @Override
         protected void onPreExecute() {

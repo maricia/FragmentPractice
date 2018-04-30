@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<Part>
+    <H1>Maricia Alleman </H1>
+
+    <Sect>
+        <H1>Application Developer </H1>
+
+        <P>I am a West Texas Native Applications Developer. Accustomed to developing in Windows and Linux environments. I am proficient in the latest version of Android Studio, Java, Unity3D, Adobe Creative Suite, and Eclipse. I work hard to meet deadlines and satisfy the needs of my co-workers and peers. Additionally I am easy-going and will prove a good friend and agreeable co-worker. I enjoy baseball, hiking, being creative and developing applications. </P>
+    </Sect>
+
+    <Sect>
+        <H1>Personal Info Experience </H1>
+
+        <Sect>
+            <H3>Address </H3>
+
+            <P>7014 Robbie Road Odessa Texas 79765 </P>
+        </Sect>
+
+        <Sect>
+            <H3>Phone </H3>
+
+            <P>432 559 8902 </P>
+        </Sect>
+
+        <Sect>
+            <H3>E-mail </H3>
+
+            <P>
+                <Link>maricia.a.alleman@gmail.com </Link>
+            </P>
+        </Sect>
+
+        <Sect>
+            <H3>LinkedIn </H3>
+
+            <P>
+                <Link>www.linkedin.com/in/maricia-alleman </Link>
+            </P>
+        </Sect>
+
+        <Sect>
+            <H3>Twitter </H3>
+
+            <P>
+                <Link>https://twitter.com/MariciaAlleman </Link>
+            </P>
+        </Sect>
+
+        <Sect>
+            <H3>GitHub </H3>
+
+            <P>
+                <Link>https://github.com/maricia </Link>
+            </P>
+
+            <P>WWW </P>
+
+            <P>
+                <Link>www.maricia.com </Link>
+            </P>
+        </Sect>
+
+        <Sect>
+            <H3>YouTube </H3>
+
+            <P>
+                <Link>http://www.youtube.com/c/mariciaall eman </Link>
+            </P>
+        </Sect>
+    </Sect>
+
+    <Sect>
+        <H1>Skills </H1>
+
+        <P>JAVA </P>
+
+        <P>C# </P>
+
+        <P>Python </P>
+
+        <P>HTML / CSS </P>
+
+        <P>Node.js </P>
+
+        <P>Socket.IO </P>
+
+        <P>Oracle VM / VMWare </P>
+
+        <P>Map Reduce Frame Work </P>
+
+        <Sect>
+            <P>2014-12 present </P>
+
+            <P>2009-10 2014-11 </P>
+
+            <P>2005-01 2009-05 </P>
+
+            <Sect>
+                <H2>System Analyst II </H2>
+
+                <P>University of Texas of the Permian Basin, IRPE </P>
+
+                <L>
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Responsible for the maintenance, enhancement, data integrity, and daily operations of the data warehouse. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Design ETL packages using MS SQL and visual studio. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Develop, customize, enhance and maintain web-based service delivery system. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Develop reports for internal and external reporting insuring compliance with all applicable laws and mandated guidelines. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Plan, design, and streamline technical and business processes for new and existing requirements. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Insure the quality, integrity, and security of data and systems. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Troubleshoot and solve daily operational/technical problems. </LBody>
+                    </LI>
+                </L>
+            </Sect>
+
+            <Sect>
+                <H2>Programmer Analyst / Network Communications Specialist </H2>
+
+                <P>Odessa College, IS / Network Services </P>
+
+                <L>
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Automated User Creation process on the IBM AIX Machine. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Automated the Assignment of Security Access to the Ellucian ERP System. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Manage mainframe logins. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Wrote, test and install programs, subroutines and web transactions using Rocket Soft UniData and Datatel’s Envision Tool Kit. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Maintain the WebAdvisor component of the colleague Information System. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Produce written documentation for programs and software process including procedural manuals, training aids, visual and web documents. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Maintain existing UniData programs and subroutines, and file dictionaries within Datatel College Information Systems </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Assist in end user support and training through phone support, email support, office visits, training sessions and on-‐campus classes </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Support of the Image Now imaging system. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Set up and monitor daily mainframe Backup system. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Set up, support, and maintain local area networks (LANs), </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Networked 10+ new computer labs. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Installed routers, switches, firewalls and network-related software programs. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Maintained and installed network cabling. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Managed Network software and switches in Dormitory. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Supported students with computer related issues over telephone and in person. </LBody>
+                    </LI>
+                </L>
+            </Sect>
+        </Sect>
+
+        <Sect>
+            <Sect>
+                <H2>Sr. PC Support Specialist </H2>
+
+                <P>City of Odessa, IT </P>
+
+                <L>
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Installs, configures and connects computer systems to the City network. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Installs and configures operating system and application software. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Provides troubleshooting on both hardware and software. </LBody>
+                    </LI>
+                </L>
+            </Sect>
+
+            <P>Hadoop File System </P>
+
+            <P>Adobe Creative Suite </P>
+
+            <P>Android Studio </P>
+
+            <P>Unity 3D </P>
+
+            <P>Eclipse </P>
+
+            <P>MS Office </P>
+
+            <P>Windows </P>
+
+            <P>Linux </P>
+
+            <Sect>
+                <P>1993-08 2001-12 </P>
+
+                <L>
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Develops and maintains client/server application software. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Maintain and update Intranet website and server, using SQL and ASP.NET. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Maintain SharePoint Server SQL databases. </LBody>
+                    </LI>
+
+                    <LI>
+                        <Lbl>• </Lbl>
+
+                        <LBody>Developed a disaster recovery plan for isintranet server. </LBody>
+                    </LI>
+                </L>
+            </Sect>
+        </Sect>
+
+        <Sect>
+            <H2>31U -Signal Support Specialist </H2>
+
+            <P>US Army </P>
+
+            <L>
+                <LI>
+                    <Lbl>• </Lbl>
+
+                    <LBody>Installs, maintains, and troubleshoots Signal support equipment and terminal devices. </LBody>
+                </LI>
+
+                <LI>
+                    <Lbl>• </Lbl>
+
+                    <LBody>Installs, operates, and maintains designated radio and data distribution systems. </LBody>
+                </LI>
+
+                <LI>
+                    <Lbl>• </Lbl>
+
+                    <LBody>Maintains selected electronic devices. Performs Signal support functions, to include providing technical assistance and training for user owned and operated automation and communications equipment. </LBody>
+                </LI>
+
+                <LI>
+                    <Lbl>• </Lbl>
+
+                    <LBody>Prepares maintenance and supply requests for unit level Signal support. </LBody>
+                </LI>
+
+                <LI>
+                    <Lbl>• </Lbl>
+
+                    <LBody>Operates and performs PMCS on assigned vehicles. </LBody>
+                </LI>
+
+                <LI>
+                    <Lbl>• </Lbl>
+
+                    <LBody>Install, operates, and performs PMCS on power generators. </LBody>
+                </LI>
+            </L>
+        </Sect>
+    </Sect>
+
+    <Sect>
+        <H1>Education </H1>
+
+        <P>2017-01 present </P>
+
+        <P>2002-01 2006-06 </P>
+
+        <P>2002-01 2004-06 </P>
+
+        <Sect>
+            <H2>University of Texas Permian Basin </H2>
+
+            <P>Masters in Computer Science Map Reduce Framework and the Hadoop Distributed File System. Game Development in C# Android Application Development in Java P2P chat and file sharing application. GPA 3.6 </P>
+        </Sect>
+
+        <Sect>
+            <H2>University of Texas Permian Basin </H2>
+
+            <P>Bachelor of Science in Computer Science GPA 3.4 </P>
+
+            <P>Odessa College </P>
+        </Sect>
+    </Sect>
+</Part>
+
+    </android.support.constraint.ConstraintLayout>

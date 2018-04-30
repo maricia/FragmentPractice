@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:padding="6dp">
+    android:padding="6dp"
+    android:id="@+id/skills_item_view">
 
 <ImageView
     android:layout_width="wrap_content"

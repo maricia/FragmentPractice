@@ -14,20 +14,32 @@ import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
+    RecyclerView mRecyclerView;
     Context mContext;
     List<skills> mDate;
 
-    public RecyclerViewAdapter(Context mContext, List<skills> mDate) {
+    //constructor
+    public RecyclerViewAdapter(Context mContext, List<skills> mDate, RecyclerView recyclerView) {
         this.mContext = mContext;
         this.mDate = mDate;
+        this.mRecyclerView = mRecyclerView;
     }
 
+
+    //create new view
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View v = LayoutInflater.from(mContext).inflate(R.layout.item_skills, parent, false);
+        //create a new view
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View v = inflater.inflate(R.layout.item_skills, parent, false);
+
+
+       // View v = LayoutInflater.from(mContext).inflate(R.layout.item_skills, parent, false);
         MyViewHolder viewHolder = new MyViewHolder(v);
+
+        //set the views sizes, margins, paddings and layout parameters
 
         return viewHolder;
     }
@@ -43,6 +55,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public int getItemCount() {
         return mDate.size();
     }
+
+
+
+
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 

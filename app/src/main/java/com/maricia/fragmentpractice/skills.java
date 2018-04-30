@@ -1,10 +1,15 @@
 package com.maricia.fragmentpractice;
 
+
+//skills model
+
 public class skills {
     private String skill;
     private int skillamount;
     private int photo;
 
+
+    //constructor
     public skills() {
 
     }

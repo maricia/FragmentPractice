@@ -51,11 +51,6 @@
         android:layout_weight="1"
         android:background="?android:attr/listDivider" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/skillRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
-
+    <include layout="@layout/recyclerviewlayout" />
 
 </LinearLayout>

@@ -33,7 +33,8 @@
         android:layout_height="match_parent"
         android:max="100"
         android:progress="100"
-        android:id="@+id/skill_seekbar"/>
+        android:id="@+id/skill_seekbar"
+        android:progressTint="@color/secondaryColorPink"/>
 
 
 </LinearLayout>

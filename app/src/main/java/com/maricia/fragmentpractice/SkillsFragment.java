@@ -35,7 +35,8 @@ public class SkillsFragment extends Fragment{
 
         rcview = (RecyclerView) view.findViewById(R.id.skillRecyclerView);
         rcview.setLayoutManager(new LinearLayoutManager(getActivity()));
-        //loadlist();
+
+
         skillList = new ArrayList<>();
         skillList.add(new skills("Java",90, R.drawable.ic_java_white));
         skillList.add(new skills("C#",90, R.drawable.if_csharp));
@@ -51,31 +52,11 @@ public class SkillsFragment extends Fragment{
         adapter = new RecyclerViewAdapter(getContext(),skillList, rcview);
         rcview.setAdapter(adapter);
         rcview.setItemAnimator(new DefaultItemAnimator());
-        //recyclerView
-        // recyclerViewlayout = (RecyclerView) view.findViewById(R.id.recyclerviewlayout);
-     //  recyclerViewlayout.setLayoutManager(new LinearLayoutManager(this.getActivity()));
 
-     //  RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(this.getContext(), skillList, recyclerViewlayout);
 
- //
- //
- //
         return view;
     }
 
-    private void loadlist() {
-
-        skillList = new ArrayList<>();
-        skillList.add(new skills("Java",90, R.drawable.ic_java_white));
-        skillList.add(new skills("Python", 50 , R.drawable.ic_python_black) );
-        skillList.add(new skills("Map Reduce",90,R.drawable.ic_map_reduce_black) );
-        skillList.add(new skills("HTML/CSS", 100, R.drawable.ic_html_black) );
-        skillList.add(new skills("Adobe",90,R.drawable.ic_adobe_red) );
-        skillList.add(new skills("Android",90,R.drawable.ic_android_black_24dp) );
-        skillList.add(new skills("Linux",70,R.drawable.ic_tux_black) );
-        skillList.add(new skills("Windows",90,R.drawable.ic_windows_black) );
-
-    }
 
 
     @Override

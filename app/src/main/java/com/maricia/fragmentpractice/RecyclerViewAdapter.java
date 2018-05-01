@@ -49,6 +49,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.skill_name_TextView.setText(mDate.get(position).getSkill());
         holder.img.setImageResource(mDate.get(position).getPhoto());
         holder.skill_seekBar.setProgress(mDate.get(position).getSkillamount());
+      //  holder.skill_seekBar.setEnabled(false);
+        holder.skill_seekBar.getThumb().setAlpha(0);
     }
 
     @Override

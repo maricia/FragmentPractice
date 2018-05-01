@@ -32,4 +32,5 @@ dependencies {
     // jsoup HTML parser library @ https://jsoup.org/
     implementation 'org.jsoup:jsoup:1.11.3'
     implementation 'com.android.support:gridlayout-v7:27.1.1'
+
 }

@@ -83,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:layout_column="2"
                         android:paddingStart="12dp"
-                        android:text="432.559.8902"
+                        android:text="000.000.0000"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:autoLink="phone"/>

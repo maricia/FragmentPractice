@@ -17,6 +17,11 @@ import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
+import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
+import com.mapbox.mapboxsdk.constants.Style;
+import com.mapbox.mapboxsdk.maps.MapboxMap;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private TextView mailTextView2;
+    private MapboxMap mapboxMap;
 
 
     @Override
@@ -33,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: starting" );
+
+        // Mapbox Access token
+        Mapbox.getInstance(getApplicationContext(),getString(R.string.map_box_token));
 
         mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());  // sections page adapter
         //Set up the View Pager with sections adapter
@@ -58,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager){
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new SkillsFragment(), "Skills");
-        adapter.addFragment(new ExperienceFragment(), "Work");
+        adapter.addFragment(new workFragment(), "Work");
         adapter.addFragment(new EducationFragment(), "Edu");
         adapter.addFragment(new WebsiteFragment(), "Website");
         viewPager.setAdapter(adapter);
@@ -81,4 +90,11 @@ public class MainActivity extends AppCompatActivity {
         setupEmail();
     }
 
+    public void setMapboxMap(MapboxMap map) {
+        // we need to set mapboxmap on the parent activity,
+        // for auto-generated ui tests
+        mapboxMap = map;
+        mapboxMap.setStyleUrl(Style.DARK);
+        mapboxMap.moveCamera(CameraUpdateFactory.zoomTo(18));
+    }
 }

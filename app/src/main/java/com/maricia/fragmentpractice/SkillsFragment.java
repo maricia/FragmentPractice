@@ -38,9 +38,11 @@ public class SkillsFragment extends Fragment{
         //loadlist();
         skillList = new ArrayList<>();
         skillList.add(new skills("Java",90, R.drawable.ic_java_white));
+        skillList.add(new skills("C#",90, R.drawable.if_csharp));
         skillList.add(new skills("Python", 50 , R.drawable.ic_python_black) );
         skillList.add(new skills("Map Reduce",90,R.drawable.ic_map_reduce_black) );
         skillList.add(new skills("HTML/CSS", 100, R.drawable.ic_html_black) );
+        skillList.add(new skills("NodeJS",90,R.drawable.if_nodejs) );
         skillList.add(new skills("Adobe",90,R.drawable.ic_adobe_red) );
         skillList.add(new skills("Android",90,R.drawable.ic_android_black_24dp) );
         skillList.add(new skills("Linux",70,R.drawable.ic_tux_black) );

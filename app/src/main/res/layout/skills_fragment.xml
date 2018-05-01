@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
-
+<!--
     <View
         android:id="@+id/divider2"
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         </TableRow>
 
     </TableLayout>
-
+-->
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"

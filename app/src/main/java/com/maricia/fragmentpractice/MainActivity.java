@@ -42,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_wrench_white);
+        tabLayout.getTabAt(0).setIcon(R.drawable.if_tool);
+        tabLayout.getTabAt(2).setIcon(R.drawable.if_12);
+        tabLayout.getTabAt(1).setIcon(R.drawable.if_rotation_job_seeker_employee_unemployee_work);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_public_white);
 
         /*
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -55,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager){
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new SkillsFragment(), "Skills");
-        adapter.addFragment(new ExperienceFragment(), "Work History");
-        adapter.addFragment(new EducationFragment(), "Education");
+        adapter.addFragment(new ExperienceFragment(), "Work");
+        adapter.addFragment(new EducationFragment(), "Edu");
         adapter.addFragment(new WebsiteFragment(), "Website");
         viewPager.setAdapter(adapter);
         //tabLayout.setupWithViewPager(viewPager);

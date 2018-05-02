@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new SkillsFragment(), "Skills");
         adapter.addFragment(new workFragment(), "Work");
-        adapter.addFragment(new EducationFragment(), "Edu");
+        adapter.addFragment(new ExperienceFragment(), "Edu");
         adapter.addFragment(new WebsiteFragment(), "Website");
         viewPager.setAdapter(adapter);
         //tabLayout.setupWithViewPager(viewPager);

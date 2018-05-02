@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.RectF;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -21,7 +22,9 @@ import com.mapbox.android.core.location.LocationEnginePriority;
 import com.mapbox.android.core.location.LocationEngineProvider;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
+import com.mapbox.mapboxsdk.annotations.BaseMarkerOptions;
 import com.mapbox.mapboxsdk.annotations.Marker;
+import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.maps.MapView;
@@ -49,6 +52,11 @@ public class ExperienceFragment extends Fragment implements LocationEngineListen
     private PermissionsManager permissionsManager;
     private BuildingPlugin buildingPlugin;
 
+    private LatLng locationOne;
+    private LatLng locationTwo;
+    private LatLng locationThree;
+    private LatLng locationFour;
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -70,17 +78,34 @@ public class ExperienceFragment extends Fragment implements LocationEngineListen
         //map
         mapView = (MapView) view.findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
-
+        View selectionBox = view.findViewById(R.id.mapView);
         
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(MapboxMap mapboxMap) {
                 if (activity != null) {
+
+
+
                     //activity.setMapboxMap(mapboxMap);
                     ExperienceFragment.this.mapboxMap = mapboxMap;
                     enableLocationPlugin();
+
                     buildingPlugin = new BuildingPlugin(mapView, mapboxMap);
                     buildingPlugin.setVisibility(true);
+
+                   locationOne = new LatLng(31.910573,-102.393999);//top left
+                   locationTwo = new LatLng(31.851202,-102.371411);//bottom left
+                    locationThree = new LatLng(31.910573,-102.393999);//top right
+                    locationFour = new LatLng(31.911588,-102.322511);//bottom right
+
+
+                    mapboxMap.addMarker(new MarkerOptions().title("Odessa College").snippet("2002 - 2004").position(new LatLng(31.866147,-102.386030)));
+                    mapboxMap.addMarker(new MarkerOptions().title("UTPB").snippet("2002 - 2006").position(new LatLng(31.887871,-102.323015)));
+                    mapboxMap.addMarker(new MarkerOptions().title("Permian High School").snippet("2002 - 2006").position(new LatLng(31.886858,-102.357809)));
+
+
+
                 }
             }
         });
@@ -99,17 +124,7 @@ public class ExperienceFragment extends Fragment implements LocationEngineListen
             locationPlugin.setLocationLayerEnabled(true);
             locationPlugin.setRenderMode(RenderMode.COMPASS);
 
-            /*
-            GeoJsonPluginBuilder geoJsonPlugin = new GeoJsonPluginBuilder()
-                    .withContext(this)
-                    .withMap(mapboxMap)
-                    .withOnLoadingURL(this)
-                    .withOnLoadingFileAssets(this)
-                    .withOnLoadingFilePath(this)
-                    .withMarkerClickListener(this)
-                    .withRandomFillColor()
-                    .build();
-*/
+
 
         } else {
             permissionsManager = new PermissionsManager(this);
@@ -144,7 +159,7 @@ public class ExperienceFragment extends Fragment implements LocationEngineListen
 
     private void setCameraPosition(Location location) {
         mapboxMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
-                new LatLng(location.getLatitude(), location.getLongitude()), 10l));
+                new LatLng(location.getLatitude(), location.getLongitude()), 11));
     }
 
     @Override
